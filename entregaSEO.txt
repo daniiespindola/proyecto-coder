@@ -1,0 +1,6 @@
+Agregue titulos a todas mis paginas en todas con el nombre principal y de la seccion en la que se encuentra. 
+Tambien agregue meta description a todas las paginas lo mas breve y descriptivo posible para que en pocas palabras se pueda
+comprender de que se trata la web a la que se va a ingresar dependiendo su seccion. 
+Agregue meta keywords a las paginas de index, nosotros, productos, servicios y contacto con las palabras claves para el motor
+de busqueda.
+Reordene carpetas y elimine imagenes innecesarias que se encontraban en las mismas.

@@ -1,0 +1,251 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url(../webfonts/Roboto-Medium.ttf);
+}
+
+.colorParrafo{
+	color: #410101;
+	font-style: italic; 
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.formatoLogo{
+	width: 400px; 
+	height: 250px; 
+}
+
+.imagenProducto{
+	width: 160px;
+	height: 160px;
+	margin: 20px 10px 10px 0px;
+}
+
+.fondoBody{
+	background-color: #F6EDED;
+}
+
+.fondoColor{
+	background-color: #E5CCCC;
+}
+
+.fondoCarousel{
+	background-color: ;
+	max-width: 900px;
+	margin-bottom: 15px;
+}
+
+.centrado{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.titulo{
+	text-align: center;
+	font-family: "Roboto";
+	color: black;
+	font-weight: bold;
+}
+
+.formaDiv{
+	font-size: 20px;
+	background-color: #D6D1D1;
+	color: black;
+}
+.icono{
+	margin: 10px; 
+}
+
+.tamañoProductos{
+	width: 600px;
+}
+.tamañoImagen{
+	width: 400px;
+	height: 200px;
+}
+
+.navbar {
+	background-color: transparent !important;
+	color: black;
+	font-family: Roboto;
+}
+
+ul li a { 
+	color: #C50808;	
+}
+
+ol li { 
+	color: black;
+	display: block;
+}
+
+td {
+	color: black;
+	font-weight: bold;
+	padding: 5px 20px;
+	font-size: 20px;
+}
+
+td a{
+	color: black;
+	transition: color 0,5s;
+}
+
+td a:hover{
+	color: #B40404;
+}
+th{
+	font-size: 25px;
+	font-weight: bold;
+	padding: 5px 20px;
+}
+li {
+	display: inline-block;
+	padding: 10px 5px;
+}
+
+td ul li {
+	display: block;
+	margin-right: 60px;
+}
+
+textarea{
+	display: block;
+	margin: 20px 0px;
+}
+
+.enLinea{
+	display: inline-block;
+}
+
+.styleText {
+	font-weight: bold;
+	font-family: Roboto;
+	font-size: 30px;
+}
+
+.colorIconos{
+	color: black
+}
+
+h3{
+	font-family: Roboto;
+	font-weight: bold;
+	color: black;
+	font-size: 20px
+	margin: 10px;
+	padding: 0px 10px;
+}
+
+footer{
+	background-color: #D6D1D1;
+	margin: 20px 10px 5px 10px;
+	font-size: 20px;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.formaTabla{
+	background-color: #D6D1D1;
+	border: solid 2px black;
+	padding: 10px;
+	margin: 10px;
+	width: 500px;
+	height: 400px
+}
+
+.tablaServicios{
+	width:1000px;
+	border: solid 3px black;
+	padding: 10px 50px 20px 50px;
+}
+
+th{
+	padding: 5px 20px;
+}
+
+
+form fieldset{
+	display: inline-block;
+	margin: 30px;
+	padding: 10px;
+	border: solid 2px black;
+}
+
+
+.gradiente{
+	background-image: linear-gradient(#C6FFDD, #FBD786, #f7797d);
+}
+
+input {
+	display: block;
+	margin: 10px 0px;
+	transition: all 2s;
+	font-family: Roboto;
+}
+
+input:focus{
+	width: 200px;
+	font-size: 20px;
+}
+nav ul li a{
+	transition: background-color 1s;
+	transition: color 1s;
+}
+
+nav ul li a:hover{
+	background-color: #D1CCCC;
+	color: black;
+	border: 3rem;
+}
+
+#grilla {
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	". h1 ."
+	"productos productos productos"
+	"publicidad servicios servicios"
+	"footer footer footer";
+	grid-template-rows: 100px 100px 1fr 1fr 100px; 
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1{
+	grid-area: h1;
+	margin: 10px;
+	padding: 10px;
+}
+header {
+	grid-area: header;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+footer {
+	grid-area: footer;
+}
+section#productos {
+	grid-area: productos;
+	margin: 20px;
+	padding: 15px;     
+}
+section#servicios {
+	grid-area: servicios;
+	margin: 15px;
+	padding: 15px;     
+}
+
+aside {
+	grid-area: publicidad;
+	margin: 10px;
+	text-align: center;
+	font-family: Roboto;
+	font-weight: bold;
+	color: black;
+}
+
+.border{
+	border: solid 2px black;
+}

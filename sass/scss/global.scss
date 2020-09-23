@@ -1,0 +1,290 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	background-color: $bg-color;
+}
+
+
+@font-face {
+	font-family: 'Roboto';
+	src: url(../webfonts/Roboto-Medium.ttf);
+}
+
+.header{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-weight: bold;
+
+	.header__navbar {
+		background-color: transparent !important;
+		color: black;
+	}
+
+	nav ul li a{
+		transition: background-color 1s;
+		transition: color 1s;
+	}
+
+	nav ul li a:hover{
+		background-color: #D1CCCC;
+		color: black;
+		border: 3rem;
+
+	}
+}
+
+div.centrado{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+
+	.centrado--logo{
+		max-width: 100%;
+	}
+}
+
+section.seccionIndex--centrado{
+	max-width: 100%;
+
+	div p{color: #410101;
+		font-style: italic; 
+		font-weight: bold;
+		font-size: 20px;
+
+		i{
+			margin: 10px;
+		}
+	}
+}
+
+.bg-formulario{
+	background-color: #38383A;
+	color: white;
+	padding: 15px;
+}
+
+@mixin footer($fondo){
+	background-color: $fondo;
+	margin: 20px 0px 5px;
+	color: white;
+	}
+
+	.footerIconos{
+		@include footer(#454444);
+	}
+
+	.footerCopyright{
+		@include footer(#2A2A2A);
+		font-family: Roboto;
+	}
+
+
+section.formaDiv{
+	font-size: 20px;
+	background-color: #D6D1D1;
+	color: black;
+	max-width: 900px;
+	margin-bottom: 15px;
+}
+
+section.textoNosotros{
+	background-color: #EDEBEB;
+
+	p{color: #410101;
+		font-style: italic; 
+		font-weight: bold;
+		font-size: 20px;
+	}
+}
+
+/* productos */
+
+.letrasBlancas{
+	color: white;
+	background-color: #560303;
+	padding: 10px;
+}
+
+.separado{
+	padding: 5px 10px;
+}
+
+.imagenProducto{
+	width: 160px;
+	height: 160px;
+	margin: 20px 10px 10px 0px;
+}
+
+.imagenProductos{
+	height: 180px; 
+	width: 100%; 
+	display: block;
+}
+/* productos */
+
+table.tablaServicios{
+	width:1000px;
+	border: solid 3px black;
+	padding: 10px 50px 20px 50px;
+	background-image: linear-gradient(#C6FFDD, #FBD786, #f7797d);
+
+	thead tr th{
+		font-size: 25px;
+		font-weight: bold;
+		padding: 5px 20px;
+	}
+	td {
+		color: black;
+		font-weight: bold;
+		padding: 5px 20px;
+		font-size: 20px;
+	}
+
+}
+
+
+.titulo{
+	text-align: center;
+	font-family: "Roboto";
+	color: black;
+	font-weight: bold;
+}
+/*
+
+.icono{
+	margin: 10px; 
+}
+
+.tamañoProductos{
+	width: 600px;
+}
+
+
+
+ol li { 
+	color: black;
+	display: block;
+}
+
+
+td a{
+	color: black;
+	transition: color 0,5s;
+}
+
+td a:hover{
+	color: #B40404;
+}
+
+
+textarea{
+	display: block;
+	margin: 20px 0px;
+}
+
+.enLinea{
+	display: inline-block;
+	padding-left: 50px;
+	margin: 10px;
+	color: white;
+	font-size: 20px;
+}
+
+.styleText {
+	font-weight: bold;
+	font-family: Roboto;
+	font-size: 30px;
+}
+
+.colorIconos{
+	color: white;
+}
+
+
+
+.formaTabla{
+	background-color: #D6D1D1;
+	border: solid 2px black;
+	padding: 10px;
+	margin: 10px;
+	width: 500px;
+	height: 400px
+}
+
+
+form fieldset{
+	display: inline-block;
+	margin: 30px;
+	padding: 10px;
+	border: solid 2px black;
+}
+
+
+
+input {
+	display: block;
+	margin: 10px 0px;
+	transition: all 2s;
+	font-family: Roboto;
+}
+
+input:focus{
+	width: 200px;
+	font-size: 20px;
+}
+nav ul li a{
+	transition: background-color 1s;
+	transition: color 1s;
+}
+
+nav ul li a:hover{
+	background-color: #D1CCCC;
+	color: black;
+	border: 3rem;
+}
+
+#grilla {
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	". h1 ."
+	"productos productos productos"
+	"publicidad servicios servicios"
+	"footer footer footer";
+	grid-template-rows: 100px 100px 1fr 1fr 100px; 
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1{
+	grid-area: h1;
+	margin: 10px;
+	padding: 10px;
+}
+footer {
+	grid-area: footer;
+}
+section#productos {
+	grid-area: productos;
+	margin: 20px;
+	padding: 15px;     
+}
+section#servicios {
+	grid-area: servicios;
+	margin: 15px;
+	padding: 15px;     
+}
+
+aside {
+	grid-area: publicidad;
+	margin: 10px;
+	text-align: center;
+	font-family: Roboto;
+	font-weight: bold;
+	color: black;
+}
+
+.border{
+	border: solid 2px black;
+}
+*/
