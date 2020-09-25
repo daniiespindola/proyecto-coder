@@ -19,7 +19,7 @@ html, body{
 	font-weight: bold;
 
 	.header__navbar {
-		background-color: #F5F5F5;
+		background-color: $bg-colorGris;
 		color: $font-black;
 		z-index: 900;
 		position: sticky;
@@ -219,4 +219,42 @@ footer {
 	background-color: $green;
 	font-size: 0.8em;
 	width: 40%;
+}
+
+
+
+
+section.cardServicios{
+	padding: 140px 0;
+	background-color: $bg-colorGris;
+
+	h2{
+		font-size: 46px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+}
+
+.cardServicios--estilo{
+	height: 450px;
+	background-color: #FFF; 
+	border: 1px solid #FFF;
+}
+
+.cardServicios--icono{
+	font-size: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.cardServicios--centrado{
+	text-align: center;
+}
+
+.cardServicios--card{
+	margin-top: 10px;
 }
