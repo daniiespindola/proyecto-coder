@@ -1,0 +1,21 @@
+.simplescrollup__button {
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    transition: 1s all;
+    z-index: 10000;
+}
+.simplescrollup__button--show {
+    transform: translateX(0);
+}
+.simplescrollup__button--hide {
+    transform: translateX(100px);
+}
+
+.iconoScroll{
+	font-size: 30px;
+	padding: 3px;
+	background-color: $bg-colorGris;
+	color: $font-black;
+	border:1px black solid;
+}
