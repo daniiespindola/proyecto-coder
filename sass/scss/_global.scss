@@ -197,27 +197,19 @@ footer {
 }
 
 .ig {
-	background-color: $dk-violet;
-	font-size: $social-size;
-	width: $social-width;
+	@include redes( $color-violet, $redes-size, 20%);
 }
 
 .face {
-	background-color: $blue;
-	font-size: $social-size;
-	width: $social-width;
+	@include redes( $color-blue, $redes-size, 20%);
 }
 
 .tweet {
-	background-color: $light-blue;
-	font-size: $social-size;
-	width: $social-width;
+	@include redes( $color-lightBlue, $redes-size, 20%);
 }
 
 .gmail {
-	background-color: $green;
-	font-size: 0.8em;
-	width: 40%;
+	@include redes( $color-green, 0.8em, 40%);
 }
 
 
