@@ -1,7 +1,11 @@
-html, body{
+* {
 	margin: 0;
 	padding: 0;
-	background-color: $bg-color;
+}
+
+html, body{
+	font-family: Raleway, sans-serif;  
+	background-color: $bg-colorbody;
 }
 
 
@@ -11,25 +15,27 @@ html, body{
 }
 
 .header{
-	margin-top: 10px;
 	margin-bottom: 20px;
 	font-weight: bold;
 
 	.header__navbar {
-		background-color: transparent !important;
-		color: black;
+		background-color: #F5F5F5;
+		color: $font-black;
+		z-index: 900;
+		position: sticky;
+		top: 20px;
+
 	}
 
 	nav ul li a{
 		transition: background-color 1s;
 		transition: color 1s;
-	}
 
-	nav ul li a:hover{
-		background-color: #D1CCCC;
-		color: black;
-		border: 3rem;
-
+		&:hover{
+			background-color: #D1CCCC;
+			color: $font-black;
+			border: 3rem;
+		}
 	}
 }
 
@@ -64,32 +70,20 @@ section.seccionIndex--centrado{
 	padding: 15px;
 }
 
-@mixin footer($fondo){
-	background-color: $fondo;
-	margin: 20px 0px 5px;
-	color: white;
-	}
 
-	.footerIconos{
-		@include footer(#454444);
-	}
 
-	.footerCopyright{
-		@include footer(#2A2A2A);
-		font-family: Roboto;
-	}
 
 
 section.formaDiv{
 	font-size: 20px;
 	background-color: #D6D1D1;
-	color: black;
+	color: $font-black;
 	max-width: 900px;
 	margin-bottom: 15px;
 }
 
 section.textoNosotros{
-	background-color: #EDEBEB;
+	background-color: $bg-colorbody;
 
 	p{color: #410101;
 		font-style: italic; 
@@ -135,7 +129,7 @@ table.tablaServicios{
 		padding: 5px 20px;
 	}
 	td {
-		color: black;
+		color: $font-black;
 		font-weight: bold;
 		padding: 5px 20px;
 		font-size: 20px;
@@ -147,6 +141,82 @@ table.tablaServicios{
 .titulo{
 	text-align: center;
 	font-family: "Roboto";
-	color: black;
+	color: $font-black;
 	font-weight: bold;
+}
+
+
+
+
+
+
+footer {
+	width: 100%;
+	display: inline-block;
+	margin-top: 50px;
+	height: 70px;
+	background-color: #999;
+	.copyright {
+		width: 50%;
+		float: left;
+		@media (max-width: 600px) {
+			width: 100%;
+		}
+		p {
+			padding-left: 10%;
+			color: white;
+			font-size: 0.7em;
+			line-height: 70px;
+			text-transform: capitalize;
+			letter-spacing: 1px;
+			@media (max-width: 600px) {
+				text-align: center;
+				padding: 0;
+			}
+		}
+	}
+	.social {
+		width: 50%;
+		float: right;
+		@media (max-width: 600px) {
+			width: 100%;
+		}
+		a {
+			float: left;
+			line-height: 70px;
+			text-decoration: none;
+			color: white;
+			text-align: center;
+			font-weight: bold; 
+			transition: all 0.3s;
+			&:hover {
+				background-color: #222;
+				transition:all .3s;
+			}
+		}
+	}
+}
+
+.ig {
+	background-color: $dk-violet;
+	font-size: $social-size;
+	width: $social-width;
+}
+
+.face {
+	background-color: $blue;
+	font-size: $social-size;
+	width: $social-width;
+}
+
+.tweet {
+	background-color: $light-blue;
+	font-size: $social-size;
+	width: $social-width;
+}
+
+.gmail {
+	background-color: $green;
+	font-size: 0.8em;
+	width: 40%;
 }
