@@ -50,18 +50,17 @@ div.centrado{
 	}
 }
 
-section.seccionIndex--centrado{
-	max-width: 100%;
+.indexIconos{
+	font-size: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 
-	div p{color: #410101;
-		font-style: italic; 
-		font-weight: bold;
-		font-size: 20px;
+}
 
-		i{
-			margin: 10px;
-		}
-	}
+.bg-seccionIndex{
+	background-color: $bg-colorGris;
+	padding: 15px 0px;
 }
 
 .bg-formulario{
@@ -74,9 +73,9 @@ section.seccionIndex--centrado{
 
 
 
-section.formaDiv{
+section.formaCarousel{
 	font-size: 20px;
-	background-color: #D6D1D1;
+	background-color: $bg-colorGris;
 	color: $font-black;
 	max-width: 900px;
 	margin-bottom: 15px;
