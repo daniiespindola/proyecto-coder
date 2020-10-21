@@ -11,19 +11,20 @@
   <title>Productos - Paula design</title>
 </head>
 <body class="fondoBody">
+   <div id="seccion_carga">
+        <div id="carga"></div>
+    </div>
   <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light header__navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light header__navbar menu ">
       <a class="navbar-brand" href="index.html"><i class="fab fa-product-hunt"></i></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler header--button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,61 +55,247 @@
     </div>
     <h2 class="titulo">Productos</h2>
   </header>
+  
+ <div class="cards">
 
-  <section class="container"> 
-    <div class="row d-flex justify-content-center">
-
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="card card-block">
-          <img class="card-img-top imagenProductos" alt="Polaroid Mini" src="./images/polaroidMini.jpeg" data-holder-rendered="true">
-          <div class="card-block letrasBlancas">
-            <h4 class="card-title text-center">12 Polaroid Mini</h4>
-
-            <ul class="list-group list-group-flush text-center">
-              <li class="list-group-item  letrasBlancas">Papel ilustracion 300g</li>
-              <li class="list-group-item  letrasBlancas">Fondo Blanco</li>
-              <li class="list-group-item  letrasBlancas">Medidas 6x8</li>
-              <li class="list-group-item  letrasBlancas">Precio $150</li>
-            </ul>
-            <a href="compraRealizada.html" class="btn btn-dark d-flex justify-content-center" target="_self">Comprar <i class="fas fa-shopping-cart separado"></i></a>
-          </div>
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="./images/polaroidClassic.jpg" alt="polaroidClassic" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
         </div>
       </div>
-      
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="card card-block">
-          <img class="card-img-top imagenProductos" src="./images/polaroidClassic.jpeg" alt="Polaroid Classic"data-holder-rendered="true">
-          <div class="card-block letrasBlancas">
-            <h4 class="card-title text-center">12 Polaroid classic</h4>
+    </div>
+  </div>
 
-            <ul class="list-group list-group-flush text-center">
-              <li class="list-group-item  letrasBlancas">Papel ilustracion 300g</li>
-              <li class="list-group-item  letrasBlancas">Fondo Blanco</li>
-              <li class="list-group-item  letrasBlancas">Medidas 8x10</li>
-              <li class="list-group-item  letrasBlancas">Precio $180</li>
-            </ul>
-            <a href="compraRealizada.html" class="btn btn-dark d-flex justify-content-center" target="_self">Comprar <i class="fas fa-shopping-cart separado"></i></a>
-          </div>
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="./images/polaroidMini.jpg" alt="polaroidMini" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="col-sm-12 col-md-4 col-lg-3">
-        <div class="card card-block">
-          <img class="card-img-top imagenProductos" src="./images/polaroidXl.jpeg" alt="Polaroid Xl"data-holder-rendered="true">
-          <div class="card-block letrasBlancas">
-            <h4 class="card-title text-center">12 Polaroid Xl</h4>
-
-            <ul class="list-group list-group-flush text-center">
-              <li class="list-group-item  letrasBlancas">Papel ilustracion 300g</li>
-              <li class="list-group-item  letrasBlancas">Fondo Blanco</li>
-              <li class="list-group-item  letrasBlancas">Medidas 8x10</li>
-              <li class="list-group-item  letrasBlancas">Precio $230</li>
-            </ul>
-            <a href="compraRealizada.html" class="btn btn-dark d-flex justify-content-center" target="_self">Comprar <i class="fas fa-shopping-cart separado"></i></a>
-          </div>
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="./images/polaroidXl.jpg" alt="polaroidXl" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="./images/squaremini.jpg" alt="squaremini" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="./images/polaroidcurvo.jpg" alt="polaroidcurvo" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="https://source.unsplash.com/300x225/?river" alt="river" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="https://source.unsplash.com/300x225/?kite" alt="kite" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="https://source.unsplash.com/300x225/?underwater" alt="underwater" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="https://source.unsplash.com/300x225/?desert" alt="desert" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Card title
+          <small>Image from unsplash.com</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
 
     <!-- Footer -->
    <footer>
@@ -135,5 +322,7 @@ crossorigin="anonymous"
 ></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/simplescrollup.js"></script>
+<script src="js/carga.js"></script>
+<script src="js/jsProductos.js"></script>
 </body>
 </html>

@@ -18,31 +18,84 @@ html, body{
 	margin-bottom: 20px;
 	font-weight: bold;
 
+	.header--button {
+		padding: 0.75rem;
+		font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		font-size: 0.75rem;
+		color: #FDF8FA;
+		text-transform: uppercase;
+		background-color: #80027C;
+		border: 0;
+	}
+
+	.header--logo{
+		height: 40px;
+		width: 40px;
+	}
+
 	.header__navbar {
 		background-color: $bg-colorGris;
 		color: $font-black;
 		z-index: 900;
-		position: sticky;
-		top: 20px;
-
+		position: fixed;
+		width: 100%;
+		top: 4px;
+		margin-bottom: 15px;
 	}
+}
 
-	nav ul li a{
-		transition: background-color 1s;
-		transition: color 1s;
+.menu{margin: 0px;
 
-		&:hover{
-			background-color: #D1CCCC;
-			color: $font-black;
-			border: 3rem;
-		}
-	}
+a {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+ a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+ a:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+[data-animation="to-left"] a::before {
+  transform-origin: right;
+}
+
+[data-animation="center"] a::before {
+  transform-origin: center;
+}
+
+[data-animation="bonus"] a::before {
+  transform-origin: right;
+}
+
+[data-animation="bonus"] a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+}
 }
 
 div.centrado{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin: 50px 0px 0px 0px;
 
 
 	.centrado--logo{
@@ -50,7 +103,13 @@ div.centrado{
 	}
 }
 
-.indexIconos{
+
+div.seccionIndex{
+	background-color: $bg-colorGris;
+	padding: 15px 0px;
+	margin-top: 30px;
+
+	.indexIconos{
 	font-size: 40px;
 	display: flex;
 	flex-direction: row;
@@ -58,9 +117,7 @@ div.centrado{
 
 }
 
-.bg-seccionIndex{
-	background-color: $bg-colorGris;
-	padding: 15px 0px;
+
 }
 
 .bg-formulario{
@@ -72,24 +129,55 @@ div.centrado{
 
 
 
+section.wi-100{
+	max-width: 100%;
 
-section.formaCarousel{
-	font-size: 20px;
-	background-color: $bg-colorGris;
-	color: $font-black;
-	max-width: 900px;
-	margin-bottom: 15px;
+div.formaCarousel{
+	background-color: #FDE6C8;
+	margin-top: 50px;
+
+	h3{
+		color:$font-black;
+		font-size: 30px;
+	}
+
+	img{
+		max-width: 100%;
+	}
+
+	.estilo-a{
+		color: $black;
+		font-size: 15px;
+		border-radius: 6px 6px 6px 6px;
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+		padding: 3px;
+		background-color: $bg-colorGris;
+		transition: background-color .5s;
+	}
+
+	.estilo-a:hover{
+		background-color: $black;
+		color: $white;
+	}
+
+}
 }
 
 section.textoNosotros{
 	background-color: $bg-colorbody;
+	padding: 5px;
+	border-radius: 1em;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
-	p{color: #410101;
+	p{
+		color: #410101;
 		font-style: italic; 
 		font-weight: bold;
 		font-size: 20px;
+		text-align: center;
 	}
 }
+
 
 /* productos */
 
@@ -216,7 +304,6 @@ footer {
 
 
 section.cardServicios{
-	padding: 140px 0;
 	background-color: $bg-colorGris;
 
 	h2{
@@ -231,7 +318,8 @@ section.cardServicios{
 .cardServicios--estilo{
 	height: 450px;
 	background-color: #FFF; 
-	border: 1px solid #FFF;
+	border-radius:1em;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .cardServicios--icono{
@@ -247,5 +335,21 @@ section.cardServicios{
 }
 
 .cardServicios--card{
-	margin-top: 10px;
+	margin: auto;
 }
+
+.zoom{
+        /* Aumentamos la anchura y altura durante 2 segundos */
+        transition: width 2s, height 2s, transform 2s;
+        -moz-transition: width 2s, height 2s, -moz-transform 2s;
+        -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+        -o-transition: width 2s, height 2s,-o-transform 2s;
+    }
+    .zoom:hover{
+        /* tranformamos el elemento al pasar el mouse por encima al doble de
+           su tamaño con scale(2). */
+        transform : scale(1.1);
+        -moz-transform : scale(1.1);      /* Firefox */
+        -webkit-transform : scale(1.1);   /* Chrome - Safari */
+        -o-transform : scale(1.1);        /* Opera */
+    }

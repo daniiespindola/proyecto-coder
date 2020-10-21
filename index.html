@@ -12,19 +12,20 @@
 		<title>Inicio - Paula design</title>
 	</head>
 	<body class="fondoBody">
+		<div id="seccion_carga">
+			<div id="carga"></div>
+		</div>
 		<header class="header">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light header__navbar">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light header__navbar menu">
 				<a class="navbar-brand" href="index.html"><i class="fab fa-product-hunt"></i></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler header--button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					Menu
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
 							<a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="nosotros.html">Nosotros</a>
 						</li>
 						<li class="nav-item dropdown active">
 							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,82 +51,123 @@
 					</form>
 				</div>
 			</nav>
-			<div class="centrado">
-				<img class="animate__animated animate__backInUp centrado--logo" src="./images/paula.png" alt="Logo de la empresa">
-			</div>
-			<div class="section mb-0 bg-seccionIndex">
-					<div class="container">
-
-						<div class="row col-mb-50 d-flex justify-content-around">
-							<div class="col-sm-6 col-lg-3 p-2">
-								<div class="feature-box fbox-plain fbox-dark fbox-sm">
-									<div class="fbox-content">
-										<h3>Envios a todo el país</h3>
-										<p class="mt-0">Envios mediante Correo Argentino a todo el país. Trabajamos tambien con Uber Flash, Bicimensajeria, E-pick y podes retirar por nuestro domicilio ubicado en Lanús.</p>
-									</div>
-									<div class="fbox-icon indexIconos">
-										<i class="fas fa-shipping-fast"></i>
-									</div>
+			<section class="container wi-100">			
+				<div class="bd-example d-flex justify-content-center formaCarousel">
+					<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active p-2">
+								<img class="d-block" src="./images/carousel01.png" alt="First slide">
+								<div class="carousel-caption d-none d-md-block">
+									<a class="estilo-a" href="productos.html">Ver más</a>
 								</div>
 							</div>
-
-							<div class="col-sm-6 col-lg-3 p.2">
-								<div class="feature-box fbox-plain fbox-dark fbox-sm">
-									<div class="fbox-content">
-										<h3>Todos los medios de pago</h3>
-										<p class="mt-0">Podes abonar con cualquier tarjeta de debito o credito a través de MercadoPago, y también podes abonar en efectivo al retirarlo por nuestro domicilio. </p>
-									</div>
-									<div class="fbox-icon indexIconos">
-										<i class="far fa-credit-card"></i>
-									</div>
+							<div class="carousel-item p-2">
+								<img class="d-block" src="./images/carousel02.png" alt="Second slide">
+								<div class="carousel-caption d-none d-md-block">
+									<a class="estilo-a" href="productos.html">Ver más</a>
 								</div>
 							</div>
-
-							<div class="col-sm-6 col-lg-3 p-2">
-								<div class="feature-box fbox-plain fbox-dark fbox-sm">
-									<div class="fbox-content">
-										<h3>Atención personalizada</h3>
-										<p class="mt-0">Atención personalizada de lunes a viernes de 9 a 20 hs por todos nuestros medios de contacto.</p>
-									</div>
-									<br>
-									<br>
-									<div class="fbox-icon indexIconos">
-										<i class="fab fa-whatsapp"></i>
-									</div>
-								</div>
-							</div>
-
 						</div>
-
+						<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
 					</div>
 				</div>
+			</section>
 		</header>
 
-		<!-- Footer -->
-	<footer>
-  <div class="copyright">
-    <p>© 2020 Copyright: Paula-Design</p>
-  </div>
-  <div class="social">
-    <a href="mailto:paula.desing.05@gmail.com?Subject=Consulta" target="_blank" class="gmail">Contactanos</a>
-    <a href="https://www.facebook.com/pauladesing-100897611698226" target="_blank" class="face">f</a>
-    <a href="https://twitter.com/DesingPaula" target="_blank" class="tweet">t</a>
-    <a href="https://www.instagram.com/paula.desing/" target="_blank" class="ig">ig</a>
-  </div>
-</footer>
-<a href="#up" class="simplescrollup__button simplescrollup__button--hide"><i class="fas fa-angle-up iconoScroll"></i></a>
-		</section>
-		<script
-		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"
-		></script>
-		<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"
-		></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/simplescrollup.js"></script>
-	</body>
-	</html>
+		<section class="cardServicios">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="0.56" d="M0,128L60,138.7C120,149,240,171,360,176C480,181,600,171,720,176C840,181,960,203,1080,213.3C1200,224,1320,224,1380,224L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+			<div class="container">
+
+				<div class="row clearfix cardServicios--centrado">
+					  <section class="container textoNosotros zoom">
+          	<p>Paula desing comenzó para compartir nuestra pasión y conocimientos por el diseño y algunos trabajos ya realizados, ofreciendo también servicios de diseño gráfico e impresión.
+          		<p>Creemos que poner en práctica la creatividad y nuestros conocimientos, expresarse por medio del arte crea productos originales y de calidad, personalizados a las necesidades de cada uno de ustedes.</p>
+          	</section>
+              <!-- Card 1
+              	============================================= -->
+              	<div class="col-lg-4 col-md-6 mt-3">
+              		<div class="card shadow-sm d-flex align-items-end flex-column p-3 cardServicios--estilo zoom" >
+              			<div class="cardServicios--card">
+              				<div class="card-body">
+              					<h3 class="card-title font-weight-normal">Envios a todo el país</h3>
+              					<p class="card-text mb-0 mt-2 font-weight-light">Envios mediante Correo Argentino a todo el país. Trabajamos tambien con Uber Flash, Bicimensajeria, E-pick y podes retirar por nuestro domicilio ubicado en Lanús.</p>
+              					<i class="fas fa-shipping-fast mb-4 cardServicios--icono"></i>
+              				</div>
+              			</div>
+              		</div>
+              	</div>
+
+              <!-- Card 2
+              	============================================= -->
+              	<div class="col-lg-4 col-md-6 mt-3">
+              		<div class="card shadow-sm d-flex align-items-end flex-column p-3 cardServicios--estilo zoom">
+              			<div class="cardServicios--card">
+              				<div class="card-body">
+              					<h3 class="card-title font-weight-normal">Todos los medios de pago</h3>
+              					<p class="card-text mb-0 mt-2 font-weight-light">Podes abonar con cualquier tarjeta de debito o credito a través de MercadoPago, y también podes abonar en efectivo al retirarlo por nuestro domicilio.</p>
+              					<i class="far fa-credit-card mb-4 cardServicios--icono"></i>
+              				</div>
+              			</div>
+              		</div>
+              	</div>
+
+              <!-- Card 3
+              	============================================= -->
+              	<div class="col-lg-4 col-md-6 mt-3">
+              		<div class="card shadow-sm d-flex align-items-end flex-column p-3 cardServicios--estilo zoom">
+              			<div></div>
+              			<div class="cardServicios--card">
+              				<div class="card-body">
+              					<h3 class="card-title font-weight-normal">Atención personalizada</h3>
+              					<p class="card-text mb-0 mt-2 font-weight-light">Atención personalizada de lunes a viernes de 9 a 20 hs por todos nuestros medios de contacto.</p>
+              					<i class="fab fa-whatsapp mb-4 cardServicios--icono"></i>
+              				</div>
+              			</div>
+              		</div>
+
+              	</div>
+              </div>
+               </section>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="0.56" d="M0,128L60,138.7C120,149,240,171,360,176C480,181,600,171,720,176C840,181,960,203,1080,213.3C1200,224,1320,224,1380,224L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        
+
+          	<!-- Footer -->
+          	<footer>
+          		<div class="copyright">
+          			<p>© 2020 Copyright: Paula-Design</p>
+          		</div>
+          		<div class="social">
+          			<a href="mailto:paula.desing.05@gmail.com?Subject=Consulta" target="_blank" class="gmail">Contactanos</a>
+          			<a href="https://www.facebook.com/pauladesing-100897611698226" target="_blank" class="face">f</a>
+          			<a href="https://twitter.com/DesingPaula" target="_blank" class="tweet">t</a>
+          			<a href="https://www.instagram.com/paula.desing/" target="_blank" class="ig">ig</a>
+          		</div>
+          	</footer>
+          	<a href="#up" class="simplescrollup__button simplescrollup__button--hide"><i class="fas fa-angle-up iconoScroll"></i></a>
+          </section>
+          <script
+          src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"
+          ></script>
+          <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+          crossorigin="anonymous"
+          ></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/simplescrollup.js"></script>
+          <script src="js/carga.js"></script>
+      </body>
+      </html>
