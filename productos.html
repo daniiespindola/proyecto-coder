@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
   <meta charset="utf-8">
   <meta name="description" content="Servicio de impresion en distintos formatos. Polaroid, square, classic, A3, A4. Cuadros tipo lienzo, con fotos, colgantes. Diseños digitales e impresos para emprendedores. Envios a todo el pais.">
-  <meta name="keywords" content="paula, disenos, design, desing, polaroid, cuadros, emprendedores, impresiones, digital, logos, flayer, branding, folletos, tarjetas, tags, autoadhesivos, ilustraciones, fotografias, polaroids, papeleria, decoracion">
+  <meta name="keywords" content="paula, disenos, polaroid, cuadros, emprendedores, impresiones, digital, logos, flayer, folletos, tarjetas, tags, autoadhesivos, ilustraciones, fotografias, polaroids, papeleria, decoracion">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="sass/css/main.css">
   <title>Productos - Paula design</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="sass/css/main.css">
+
 </head>
-<body class="fondoBody">
+<body class="bodyProductos">
    <div id="seccion_carga">
         <div id="carga"></div>
     </div>
@@ -30,12 +32,13 @@
             <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Productos
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="productos.html">Polaroids</a>
-              <a class="dropdown-item" href="#">Emprendedores</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Destacados del mes</a>
-            </div>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="productos.html">Polaroids</a>
+                <a class="dropdown-item" href="productos.html">Cuadros</a>
+                <a class="dropdown-item" href="productos.html">Emprendedores</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="productos.html">Destacados del mes</a>
+              </div>
           </li>
           <li class="nav-item active">
             <a class="nav-link disabled" href="servicios.html">Servicios</a>
@@ -50,17 +53,26 @@
         </form>
       </div>
     </nav>
-    <div class="centrado">
-      <img class="centrado--logo" src="./images/nosotros01.png" alt="Logo de la empresa">
-    </div>
-    <h2 class="titulo">Productos</h2>
   </header>
-  
+  <section class="container d-flex justify-content-start">
+  <div class="Iam mtop p-2">
+
+<p>Productos:</p>
+<b>
+  <div class="innerIam">
+    Polaroids<br /> 
+    Cuadros<br />
+    Emprendedores<br />
+    </div>
+</b>
+
+</div>
+</section>
  <div class="cards">
 
   <div class="card">
     <div class="card__image-holder">
-      <img class="card__image" src="./images/polaroidClassic.jpg" alt="polaroidClassic" />
+      <img class="card__image" src="./images/polaroidClassic.jpeg" alt="polaroidClassic" />
     </div>
     <div class="card-title">
       <a href="#" class="toggle-info btn">
@@ -68,17 +80,17 @@
         <span class="right"></span>
       </a>
       <h2>
-          Card title
-          <small>Image from unsplash.com</small>
+          Polaroid Classic
+         <small>$18 c/u</small> 
       </h2>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+       8x10 centimetros. Papel ilustración 300g. Fondo blanco.
       </div>
       <div class="card-flap flap2">
         <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>
@@ -86,7 +98,7 @@
 
   <div class="card">
     <div class="card__image-holder">
-      <img class="card__image" src="./images/polaroidMini.jpg" alt="polaroidMini" />
+      <img class="card__image" src="./images/polaroidMini.jpeg" alt="polaroidMini" />
     </div>
     <div class="card-title">
       <a href="#" class="toggle-info btn">
@@ -94,17 +106,17 @@
         <span class="right"></span>
       </a>
       <h2>
-          Card title
-          <small>Image from unsplash.com</small>
+          Polaroid Mini
+          <small>$15 c/u</small>
       </h2>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+       6x8 centimetros. Papel ilustración 300g. Fondo blanco.
       </div>
       <div class="card-flap flap2">
         <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>
@@ -112,7 +124,7 @@
 
   <div class="card">
     <div class="card__image-holder">
-      <img class="card__image" src="./images/polaroidXl.jpg" alt="polaroidXl" />
+      <img class="card__image" src="./images/polaroidXl.jpeg" alt="polaroidXl" />
     </div>
     <div class="card-title">
       <a href="#" class="toggle-info btn">
@@ -120,17 +132,17 @@
         <span class="right"></span>
       </a>
       <h2>
-          Card title
-          <small>Image from unsplash.com</small>
+          Polaroid Xl
+          <small>$22 c/u</small>
       </h2>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+         9x13 centimetros. Papel ilustración 300g. Fondo blanco.
       </div>
       <div class="card-flap flap2">
         <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>
@@ -146,17 +158,17 @@
         <span class="right"></span>
       </a>
       <h2>
-          Card title
-          <small>Image from unsplash.com</small>
+          Square Mini
+          <small>$15 c/u</small>
       </h2>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+        8x8 centimetros. Papel ilustración 300g. Fondo blanco.
       </div>
       <div class="card-flap flap2">
         <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>
@@ -172,17 +184,17 @@
         <span class="right"></span>
       </a>
       <h2>
-          Card title
-          <small>Image from unsplash.com</small>
+          Polaroid Curvo
+          <small>12 unidades $170</small>
       </h2>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+         7x8 centimetros. Papel ilustración 300g. Esquinas curva.
       </div>
       <div class="card-flap flap2">
         <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>
@@ -190,7 +202,7 @@
 
   <div class="card">
     <div class="card__image-holder">
-      <img class="card__image" src="https://source.unsplash.com/300x225/?river" alt="river" />
+      <img class="card__image" src="./images/polaroidspotify.jpg" alt="polaroidspotify" />
     </div>
     <div class="card-title">
       <a href="#" class="toggle-info btn">
@@ -198,17 +210,17 @@
         <span class="right"></span>
       </a>
       <h2>
-          Card title
-          <small>Image from unsplash.com</small>
+          Polaroid spotify
+          <small>$22 c/u</small>
       </h2>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+         8x10 centimetros. Papel ilustración 300g. Fondo blanco. Codigo spotify de la cancion que elijas. 
       </div>
       <div class="card-flap flap2">
         <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>
@@ -216,7 +228,7 @@
 
   <div class="card">
     <div class="card__image-holder">
-      <img class="card__image" src="https://source.unsplash.com/300x225/?kite" alt="kite" />
+      <img class="card__image" src="./images/cuadrolienzo.jpg" alt="cuadrolienzo" />
     </div>
     <div class="card-title">
       <a href="#" class="toggle-info btn">
@@ -224,17 +236,17 @@
         <span class="right"></span>
       </a>
       <h2>
-          Card title
-          <small>Image from unsplash.com</small>
+          Cuadro Lienzo
+          <small>$300</small>
       </h2>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+        Soporte de madera 20x30 centimetros listo para colgar. Lamina en papel ilustración 300g. Imagen a elección.
       </div>
       <div class="card-flap flap2">
         <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>
@@ -242,7 +254,7 @@
   
   <div class="card">
     <div class="card__image-holder">
-      <img class="card__image" src="https://source.unsplash.com/300x225/?underwater" alt="underwater" />
+      <img class="card__image" src="./images/combocaja.jpg" alt="combocaja" />
     </div>
     <div class="card-title">
       <a href="#" class="toggle-info btn">
@@ -250,17 +262,17 @@
         <span class="right"></span>
       </a>
       <h2>
-          Card title
-          <small>Image from unsplash.com</small>
+          Combo Caja
+          <small>$120</small>
       </h2>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+        4 fotos polaroid xl a elección. Caja decorada como más te guste.  
       </div>
       <div class="card-flap flap2">
         <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>
@@ -268,7 +280,7 @@
 
   <div class="card">
     <div class="card__image-holder">
-      <img class="card__image" src="https://source.unsplash.com/300x225/?desert" alt="desert" />
+      <img class="card__image" src="./images/cuadropolaroid.jpg" alt="cuadropolaroid" />
     </div>
     <div class="card-title">
       <a href="#" class="toggle-info btn">
@@ -276,17 +288,69 @@
         <span class="right"></span>
       </a>
       <h2>
-          Card title
-          <small>Image from unsplash.com</small>
+          Cuadro Colgante Polaroid
+          <small>$250</small>
       </h2>
     </div>
     <div class="card-flap flap1">
       <div class="card-description">
-        This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc.
+        Marco de madera 20x20 centimetros + hilo + 2 broches + 2 polaroid classic personalizadas, fondo blanco o b&n. papel ilustración 300g.
       </div>
       <div class="card-flap flap2">
         <div class="card-actions">
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="./images/comboemprendedores.jpg" alt="comboemprendedores" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Combo Emprendedores 
+          <small>$220</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+       Diseño de tu logo + 50 tarjetas + 50 tarjetas personalizadas.
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="card">
+    <div class="card__image-holder">
+      <img class="card__image" src="./images/emprendedoreslogo.jpg" alt="emprendedoreslogo" />
+    </div>
+    <div class="card-title">
+      <a href="#" class="toggle-info btn">
+        <span class="left"></span>
+        <span class="right"></span>
+      </a>
+      <h2>
+          Logo Emprendedores
+          <small>$150</small>
+      </h2>
+    </div>
+    <div class="card-flap flap1">
+      <div class="card-description">
+        Diseño de tu logo + 80 stickers personalizados
+      </div>
+      <div class="card-flap flap2">
+        <div class="card-actions">
+          <a href="#" class="btn">Comprar</a>
         </div>
       </div>
     </div>

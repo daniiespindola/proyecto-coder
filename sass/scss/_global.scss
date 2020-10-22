@@ -5,17 +5,24 @@
 
 html, body{
 	font-family: Raleway, sans-serif;  
+}
+
+.body{
 	background-color: $bg-colorbody;
 }
 
+.bodyProductos{
+	background-color: #19003a;
+}
 
 @font-face {
 	font-family: 'Roboto';
 	src: url(../webfonts/Roboto-Medium.ttf);
 }
 
+
+
 .header{
-	margin-bottom: 20px;
 	font-weight: bold;
 
 	.header--button {
@@ -39,7 +46,7 @@ html, body{
 		z-index: 900;
 		position: fixed;
 		width: 100%;
-		top: 4px;
+		top: 0px;
 		margin-bottom: 15px;
 	}
 }
@@ -131,9 +138,10 @@ div.seccionIndex{
 
 section.wi-100{
 	max-width: 100%;
+	padding: 20px 0px 0px 0px;
 
 div.formaCarousel{
-	background-color: #FDE6C8;
+	background-color: #adb7ff;
 	margin-top: 50px;
 
 	h3{
@@ -305,6 +313,7 @@ footer {
 
 section.cardServicios{
 	background-color: $bg-colorGris;
+	padding-top: 20px;
 
 	h2{
 		font-size: 46px;
