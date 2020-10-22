@@ -1,0 +1,49 @@
+
+section.cardServicios{
+	background-color: $bg-colorGris;
+	padding-top: 20px;
+
+	h2{
+		font-size: 46px;
+	}
+
+	p{
+		font-size: 16px;
+	}
+}
+
+.cardServicios--estilo{
+	height: 450px;
+	background-color: #FFF; 
+	border-radius:1em;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cardServicios--icono{
+	font-size: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.cardServicios--centrado{
+	text-align: center;
+}
+
+.cardServicios--card{
+	margin: auto;
+}
+
+.zoom{
+	transition: width 2s, height 2s, transform 2s;
+	-moz-transition: width 2s, height 2s, -moz-transform 2s;
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+	-o-transition: width 2s, height 2s,-o-transform 2s;
+}
+.zoom:hover{
+        transform : scale(1.1);
+        -moz-transform : scale(1.1);      /* Firefox */
+        -webkit-transform : scale(1.1);   /* Chrome - Safari */
+        -o-transform : scale(1.1);        /* Opera */
+    }

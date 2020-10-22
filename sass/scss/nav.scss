@@ -1,0 +1,75 @@
+.header{
+	font-weight: bold;
+
+	.header--button {
+		padding: 0.75rem;
+		font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		font-size: 0.75rem;
+		color: #FDF8FA;
+		text-transform: uppercase;
+		background-color: #80027C;
+		border: 0;
+	}
+
+	.header--logo{
+		height: 40px;
+		width: 40px;
+	}
+
+	.header__navbar {
+		background-color: $bg-colorGris;
+		color: $font-black;
+		z-index: 900;
+		position: fixed;
+		width: 100%;
+		top: 0px;
+		margin-bottom: 15px;
+	}
+}
+
+.menu{margin: 0px;
+
+	a {
+		position: relative;
+		display: block;
+		padding: 5px;
+	}
+
+	a::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+		z-index: 1;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	a:hover::before {
+		transform: scaleX(1);
+	}
+
+
+
+	[data-animation="to-left"] a::before {
+		transform-origin: right;
+	}
+
+	[data-animation="center"] a::before {
+		transform-origin: center;
+	}
+
+	[data-animation="bonus"] a::before {
+		transform-origin: right;
+	}
+
+	[data-animation="bonus"] a:hover::before {
+		transform-origin: left;
+		transform: scaleX(1);
+		transition-timing-function: cubic-bezier(0.2, 1, 0.82, 0.94);
+	}
+}

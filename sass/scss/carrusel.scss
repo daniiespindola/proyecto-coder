@@ -1,0 +1,34 @@
+section.wi-100{
+	max-width: 100%;
+	padding: 20px 0px 0px 0px;
+
+	div.formaCarousel{
+		background-color: #adb7ff;
+		margin-top: 50px;
+
+		h3{
+			color:$font-black;
+			font-size: 30px;
+		}
+
+		img{
+			max-width: 100%;
+		}
+
+		.estilo-a{
+			color: $black;
+			font-size: 15px;
+			border-radius: 6px 6px 6px 6px;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+			padding: 3px;
+			background-color: $bg-colorGris;
+			transition: background-color .5s;
+		}
+
+		.estilo-a:hover{
+			background-color: $black;
+			color: $white;
+		}
+
+	}
+}
